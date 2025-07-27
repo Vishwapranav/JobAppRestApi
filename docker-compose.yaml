@@ -5,9 +5,9 @@ services:
         image: postgres:15
         container_name: postgres
         environment:
-            POSTGRES_DB: jobappdb
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: rYlI&144
+            POSTGRES_DB: YOUR_DB
+            POSTGRES_USER: YOUR_UNAME
+            POSTGRES_PASSWORD: YOUR_PWD
         ports:
             - "5432:5432"
         networks:
@@ -23,9 +23,9 @@ services:
         depends_on:
             - postgres
         environment:
-            SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/jobappdb
-            SPRING_DATASOURCE_USERNAME: postgres
-            SPRING_DATASOURCE_PASSWORD: rYlI&144
+            SPRING_DATASOURCE_URL: YOUR_URL
+            SPRING_DATASOURCE_USERNAME: YOUR_UNAME
+            SPRING_DATASOURCE_PASSWORD: YOUR_PWD
             SPRING_JPA_HIBERNATE_DDL_AUTO: update
             SPRING_PROFILES_ACTIVE: docker
         networks:
