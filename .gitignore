@@ -34,6 +34,7 @@ bin/
 # Build directories
 /target/
 /build/
+/src/main/java/resources/
 
 # OS generated files
 .DS_Store
